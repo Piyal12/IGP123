@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[IGP web application]]>
+    </line>
+    <line>
+      <![CDATA[Browser is launched]]>
+    </line>
+    <line>
+      <![CDATA[Window is maximized successfully]]>
+    </line>
+    <line>
+      <![CDATA[Land to home page successfully]]>
+    </line>
+    <line>
+      <![CDATA[Forever Love Personalized Wooden Jigsaw Heart  product is displayed]]>
+    </line>
+    <line>
+      <![CDATA[check button is displayed]]>
+    </line>
+    <line>
+      <![CDATA[error button is displayed with error message]]>
+    </line>
+    <line>
+      <![CDATA[available button is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Selected delivery type is highlighted]]>
+    </line>
+    <line>
+      <![CDATA[Date is selected successfully]]>
+    </line>
+    <line>
+      <![CDATA[selected image is present successfully]]>
+    </line>
+    <line>
+      <![CDATA[upload page  is present successfully]]>
+    </line>
+    <line>
+      <![CDATA[My Files and web browser displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Text and Url is present]]>
+    </line>
+    <line>
+      <![CDATA[croptted image and frame text is present]]>
+    </line>
+    <line>
+      <![CDATA[Uplaod Image iframe is appearsuccessfully]]>
+    </line>
+    <line>
+      <![CDATA[user is navigate to PDP on the selected product page successfully]]>
+    </line>
+    <line>
+      <![CDATA[EDIT PERSONALIZATION & ADD TO CART is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[make it extra special text displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[selected addon successfully]]>
+    </line>
+    <line>
+      <![CDATA[CONTINUE WITH ADDONS (1)]]>
+    </line>
+    <line>
+      <![CDATA[CONTINUE WITH ADDONS(1) is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[CONTINUE WITHOUT ADDONS button displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[shopping cart page Url is verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[shopping cart page content is verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[navigate to login page successfully]]>
+    </line>
+    <line>
+      <![CDATA[navigate to checkout page successfully]]>
+    </line>
+    <line>
+      <![CDATA[address form is appear successfully]]>
+    </line>
+    <line>
+      <![CDATA[address form is filled successfully]]>
+    </line>
+    <line>
+      <![CDATA[User Should Navigate to Order Summary Tab]]>
+    </line>
+    <line>
+      <![CDATA[Apply Changes text is change to Message Saved successfully]]>
+    </line>
+    <line>
+      <![CDATA[ Verify Order summary contents successfully]]>
+    </line>
+    <line>
+      <![CDATA[coupon message is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Final amount is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[User is redirected to Payments Tab successfully]]>
+    </line>
+    <line>
+      <![CDATA[radio button selected successfully]]>
+    </line>
+    <line>
+      <![CDATA[successfully navigate to HDFC netbanking page]]>
+    </line>
+    <line>
+      <![CDATA[browser closed]]>
+    </line>
+    <line>
+      <![CDATA[report generated]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-09-06T15:18:42 IST" name="Default suite" finished-at="2022-09-06T15:19:38 IST" duration-ms="55732">
+    <groups>
+    </groups>
+    <test started-at="2022-09-06T15:18:42 IST" name="Default test" finished-at="2022-09-06T15:19:38 IST" duration-ms="55732">
+      <class name="Igp.ExistingUserJourney.ExistingUserJourney">
+        <test-method is-config="true" signature="ProjectDocuments()[pri:0, instance:Igp.ExistingUserJourney.ExistingUserJourney@614ca7df]" started-at="2022-09-06T15:18:42 IST" name="ProjectDocuments" finished-at="2022-09-06T15:18:42 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[IGP web application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ProjectDocuments -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Igp.ExistingUserJourney.ExistingUserJourney@614ca7df]" started-at="2022-09-06T15:18:42 IST" name="beforeTest" finished-at="2022-09-06T15:18:43 IST" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Igp.ExistingUserJourney.ExistingUserJourney@614ca7df]" started-at="2022-09-06T15:18:43 IST" name="beforeClass" finished-at="2022-09-06T15:18:44 IST" duration-ms="1015" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is launched]]>
+            </line>
+            <line>
+              <![CDATA[Window is maximized successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Igp.ExistingUserJourney.ExistingUserJourney@614ca7df]" started-at="2022-09-06T15:18:44 IST" name="beforeMethod" finished-at="2022-09-06T15:18:48 IST" duration-ms="4094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_02Test()[pri:0, instance:Igp.ExistingUserJourney.ExistingUserJourney@614ca7df]" started-at="2022-09-06T15:18:48 IST" name="TC_02Test" finished-at="2022-09-06T15:19:38 IST" duration-ms="50037" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Land to home page successfully]]>
+            </line>
+            <line>
+              <![CDATA[Forever Love Personalized Wooden Jigsaw Heart  product is displayed]]>
+            </line>
+            <line>
+              <![CDATA[check button is displayed]]>
+            </line>
+            <line>
+              <![CDATA[error button is displayed with error message]]>
+            </line>
+            <line>
+              <![CDATA[available button is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Selected delivery type is highlighted]]>
+            </line>
+            <line>
+              <![CDATA[Date is selected successfully]]>
+            </line>
+            <line>
+              <![CDATA[selected image is present successfully]]>
+            </line>
+            <line>
+              <![CDATA[upload page  is present successfully]]>
+            </line>
+            <line>
+              <![CDATA[My Files and web browser displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[Text and Url is present]]>
+            </line>
+            <line>
+              <![CDATA[croptted image and frame text is present]]>
+            </line>
+            <line>
+              <![CDATA[Uplaod Image iframe is appearsuccessfully]]>
+            </line>
+            <line>
+              <![CDATA[user is navigate to PDP on the selected product page successfully]]>
+            </line>
+            <line>
+              <![CDATA[EDIT PERSONALIZATION & ADD TO CART is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[make it extra special text displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[selected addon successfully]]>
+            </line>
+            <line>
+              <![CDATA[CONTINUE WITH ADDONS (1)]]>
+            </line>
+            <line>
+              <![CDATA[CONTINUE WITH ADDONS(1) is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[CONTINUE WITHOUT ADDONS button displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[shopping cart page Url is verified successfully]]>
+            </line>
+            <line>
+              <![CDATA[shopping cart page content is verified successfully]]>
+            </line>
+            <line>
+              <![CDATA[navigate to login page successfully]]>
+            </line>
+            <line>
+              <![CDATA[navigate to checkout page successfully]]>
+            </line>
+            <line>
+              <![CDATA[address form is appear successfully]]>
+            </line>
+            <line>
+              <![CDATA[address form is filled successfully]]>
+            </line>
+            <line>
+              <![CDATA[User Should Navigate to Order Summary Tab]]>
+            </line>
+            <line>
+              <![CDATA[Apply Changes text is change to Message Saved successfully]]>
+            </line>
+            <line>
+              <![CDATA[ Verify Order summary contents successfully]]>
+            </line>
+            <line>
+              <![CDATA[coupon message is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[Final amount is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[User is redirected to Payments Tab successfully]]>
+            </line>
+            <line>
+              <![CDATA[radio button selected successfully]]>
+            </line>
+            <line>
+              <![CDATA[successfully navigate to HDFC netbanking page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02Test -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Igp.ExistingUserJourney.ExistingUserJourney@614ca7df]" started-at="2022-09-06T15:19:38 IST" name="afterMethod" finished-at="2022-09-06T15:19:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Igp.ExistingUserJourney.ExistingUserJourney@614ca7df]" started-at="2022-09-06T15:19:38 IST" name="afterClass" finished-at="2022-09-06T15:19:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[browser closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="ReportGenerate()[pri:0, instance:Igp.ExistingUserJourney.ExistingUserJourney@614ca7df]" started-at="2022-09-06T15:19:38 IST" name="ReportGenerate" finished-at="2022-09-06T15:19:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[report generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ReportGenerate -->
+      </class> <!-- Igp.ExistingUserJourney.ExistingUserJourney -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
