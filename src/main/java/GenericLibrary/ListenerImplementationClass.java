@@ -19,8 +19,8 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
 public class ListenerImplementationClass implements ITestListener {
-	ExtentTest test;
-	ExtentReports report;
+	public static ExtentTest test;
+	public static ExtentReports report;
 	
 	public void onTestStart(ITestResult result) 
 	{
@@ -39,8 +39,8 @@ public class ListenerImplementationClass implements ITestListener {
     public void onTestFailure(ITestResult result)
     {
     	//Step 6 :- Log Fail method, take Screenshot,attach screenshot to extent report,add exception log
-    	test.log(Status.FAIL, result.getMethod().getMethodName());
     	test.log(Status.FAIL, result.getThrowable());
+		test.log(Status.FAIL, result.getMethod().getMethodName()+"is Failed");
 		String path=null;
 		 try {
 			path=new TakeSnapShot().takeScreenshot(BaseClass.sDriver, result.getMethod().getMethodName());
