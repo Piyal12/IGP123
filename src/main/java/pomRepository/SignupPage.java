@@ -37,7 +37,14 @@ public class SignupPage {
 			
 	@FindBy(xpath=("//div[@class='col s4 no-padding']/descendant::button[text()='SIGNUP']"))
 	private WebElement SIGNUP;
-	
+	@FindBy(xpath="//select[@class='picker__select--year']")
+	private WebElement YearDD;
+	@FindBy(xpath = "//select[@title='Select a month']")
+	private  WebElement MonthDD;
+	@FindBy(xpath ="//table//td/div[text()='24']") private WebElement DATE;
+	public WebElement Dateofbirth() {
+		return DOB;
+	}
 	public WebElement EnterFirstname() throws InterruptedException {
         Thread.sleep(3000);
 		return firstname;
@@ -66,6 +73,14 @@ public class SignupPage {
 	public WebElement ClickSignup() {
 		return SIGNUP;
 	}
-	
-	
+
+	public WebElement YearDropdown() {
+		return YearDD;
+	}
+	public WebElement MonthDropdown() {
+		return MonthDD;
+	}
+	public WebElement DobDate() {
+		return DATE;
+	}
 }
