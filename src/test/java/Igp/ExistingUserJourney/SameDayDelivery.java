@@ -11,7 +11,10 @@ import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import GenericLibrary.BaseClass;
+import GenericLibrary.ListenerImplementationClass;
 import GenericLibrary.SelectClassUtility;
 import Igp.ReusableClass.SignUpDetails;
 import pomRepository.CheckoutDeliveryPage;
@@ -22,7 +25,7 @@ import pomRepository.HomePage;
 import pomRepository.ProductSelectionPage;
 import pomRepository.SignupPage;
 
-@Listeners(GenericLibrary.ListenerImplementationClass.class)
+@Listeners(ListenerImplementationClass.class)
 
 /**
  * 
@@ -59,6 +62,7 @@ public class SameDayDelivery extends BaseClass{
 		productselect.Blackforestcake().click();
 		Assert.assertEquals(driver.getCurrentUrl(), excelUtility.readDataFromExcel(EXCELDATA_PATH, "Sheet1", 2, 0));
 		Reporter.log("Selected black-forest-cake-half-kg",true);
+		ListenerImplementationClass.test.log(Status.INFO, "Selected black-forest-cake-half-kg");
 
 
 		//Verifying Pincode
@@ -68,25 +72,27 @@ public class SameDayDelivery extends BaseClass{
 		productselect.EnterNondeliveryPincode().clear();
 		productselect.EnterNondeliveryPincode().sendKeys(excelUtility.readDataFromExcel(EXCELDATA_PATH, "Sheet1", 2, 1));
 		Reporter.log("Pincode Available messgae is displayed for entered pincode",true);
-
+		ListenerImplementationClass.test.log(Status.INFO, "Pincode Available messgae is displayed for entered pincode");
 
 		//Select Delivery Date 
 		productselect.Deliverydate().click();
 		productselect.CalenderButton().click();
 		Reporter.log("Selected date from calender",true);
-
+		ListenerImplementationClass.test.log(Status.INFO, "Selected date from calender");
+		
 		//Select Delivery Type and Time 
 		productselect.deliverytype().click();
 		WebElement Time = productselect.TimeDD();		
 		select1.selectDropDown(Time, excelUtility.readDataFromExcel(EXCELDATA_PATH, "Sheet1", 1, 4));
-		Reporter.log("Selected Required Delivery TYpe and Time",true);		
+		Reporter.log("Selected Required Delivery TYpe and Time",true);
+		ListenerImplementationClass.test.log(Status.INFO, "Selected Required Delivery TYpe and Time");
 		javaScript.scrollBy(0, 1500, driver);
 
 		//Select and Deselect Add ons to cart
 		productselect.Selectcandle().click();
 		productselect.DeSelectcandle().click();
 		Reporter.log("Selected and Deselected Candle",true);	
-
+		ListenerImplementationClass.test.log(Status.INFO, "Selected and Deselected Candle");
 
 		//Adding to cart and checkout
 		productselect.clickAddtocart().click();
@@ -94,6 +100,7 @@ public class SameDayDelivery extends BaseClass{
 		productselect.Checkoutbutton().click();
 		Assert.assertEquals(driver.getCurrentUrl(), excelUtility.readDataFromExcel(EXCELDATA_PATH, "Sheet1", 3, 0));
 		Reporter.log("Product Added to cart",true);
+		ListenerImplementationClass.test.log(Status.INFO, "Product Added to cart");
 
 		//SignUp Details
 		SignupPage signup= PageFactory.initElements(driver, SignupPage.class);
@@ -102,6 +109,7 @@ public class SameDayDelivery extends BaseClass{
 		WebDriverWait wait = new WebDriverWait(driver, 10);	
 		wait.until(ExpectedConditions.visibilityOf(signup.ClickSignup()));
 		Reporter.log("Entered Signup details",true);
+		ListenerImplementationClass.test.log(Status.INFO, "Entered Signup details");
 
 
 		//Personalize measaage Details
@@ -117,6 +125,7 @@ public class SameDayDelivery extends BaseClass{
 		CheckoutSummaryPage checkoutSummary = PageFactory.initElements(driver, CheckoutSummaryPage.class);
 		checkoutSummary.getBirthday_Btn().click();
 		Reporter.log("Entered personal message",true);
+		ListenerImplementationClass.test.log(Status.INFO, "Entered personal message");
 		checkoutSummary.getMessage_TextField().sendKeys(excelUtility.readDataFromExcel(EXCELDATA_PATH, "Sheet1", 4, 3));;
 
 		// Apply Coupon 
@@ -131,7 +140,9 @@ public class SameDayDelivery extends BaseClass{
 		checkoutSummary.getEnterCouponTextfield().sendKeys(Keys.ENTER);
 
 		Reporter.log("coupon message is displayed successfully",true);
+		ListenerImplementationClass.test.log(Status.INFO, "coupon message is displayed successfully");
 		Reporter.log("Final amount is displayed successfully",true);
+		ListenerImplementationClass.test.log(Status.INFO, "Final amount is displayed successfully");
 		javaScript.scrollBy(0, 500, driver);
 		// Click on Proceed to payment
 		checkoutSummary.getProceedToPayment_Btn().click();
@@ -139,6 +150,7 @@ public class SameDayDelivery extends BaseClass{
 		CheckoutPaymentPage checkoutpayment = PageFactory.initElements(driver, CheckoutPaymentPage.class);
 		Assert.assertTrue(checkoutpayment.getPayment_Tab().isDisplayed(), "payment tab is available");
 		Reporter.log("User is redirected to Payments Tab successfully",true);
+		ListenerImplementationClass.test.log(Status.INFO, "User is redirected to Payments Tab successfully");
 		driver.close();
 	}
 
